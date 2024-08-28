@@ -3,6 +3,9 @@ package com.test.algorithm;
 import java.util.Arrays;
 import java.util.Stack;
 
+/**
+ * hard，矩阵中充满了0和1，求1的最大面积
+ */
 public class Question85 {
     public int maximalRectangle(char[][] matrix) {
         if (matrix.length == 0) return 0;

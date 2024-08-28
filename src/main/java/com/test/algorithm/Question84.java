@@ -26,6 +26,12 @@ public class Question84 {
         }
         return maxArea;
     }
+
+    /**
+     * 采用单调栈来实现对应的逻辑
+     * @param heights 高度数组
+     * @return 最大面积
+     */
     public int largestRectangleArea2(int[] heights) {
         // 单调栈实现
         int[] leftIndex = new int[heights.length];

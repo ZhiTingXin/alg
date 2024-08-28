@@ -13,17 +13,17 @@ public class Question94 {
         if (root == null) {
             return new ArrayList<>();
         }
-        return reverse(root);
+        return recursion(root);
     }
 
-    public List<Integer> reverse(TreeNode treeNode) {
+    public List<Integer> recursion(TreeNode treeNode) {
         List<Integer> result = new ArrayList<>();
         if (treeNode.left != null) {
-            result.addAll(reverse(treeNode.left));
+            result.addAll(recursion(treeNode.left));
         }
         result.add(treeNode.val);
         if (treeNode.right != null) {
-            result.addAll(reverse(treeNode.right));
+            result.addAll(recursion(treeNode.right));
         }
         return result;
     }
